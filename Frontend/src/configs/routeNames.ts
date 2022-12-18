@@ -1,0 +1,16 @@
+export const ROUTES = {
+  HOME: '/',
+  LOGIN: '/auth/login',
+  SIGN_UP: '/auth/register',
+  RESET_PASSWORD: '/auth/reset-password',
+  VERIFY_EMAIL: '/auth/verify-email',
+  FORGOT_PASSWORD: '/auth/forgot-password',
+  SEARCH: '/search',
+  CREATE_LISTING: '/create-listing',
+  EDIT_LISTING: '/edit-listing/:listingId',
+  LISTING: '/listing/:listingId',
+  MY_PROFILE: '/my-profile',
+  MY_LISTINGS: '/my-listings',
+  MY_INTERESTS: '/my-interests',
+  LISTING_INTERESTS: '/listing-interests/:listingId',
+} as const;

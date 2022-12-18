@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h4 {
+    @apply text-2xl leading-7;
+  }
+  .pagination-item {
+    @apply relative hidden items-center rounded-md border px-3 py-[0.375rem] text-sm font-semibold sm:inline-flex;
+  }
+}
+
+@layer components {
+  .big-paragraph {
+    @apply font-paragraph text-big text-custom-paragraph font-semibold leading-tight;
+  }
+  .paragraph {
+    @apply font-paragraph text-custom-paragraph text-sm font-normal leading-tight;
+  }
+  .paragraph-bold {
+    @apply font-paragraph text-custom-paragraph text-sm font-semibold leading-tight;
+  }
+
+  .h1 {
+    @apply text-3xl leading-tight;
+  }
+
+  .h2 {
+    @apply text-2xl font-normal leading-tight;
+  }
+
+  .h3 {
+    @apply text-xl font-normal leading-tight;
+  }
+
+  .h4 {
+    @apply text-2xl leading-7;
+  }
+
+  .heading {
+    @apply font-bold leading-7 text-gray-800;
+  }
+
+  .btn {
+    @apply inline-flex flex-row items-center rounded-lg p-3 text-base font-bold focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-40  md:text-sm;
+  }
+
+  .btn-primary {
+    @apply inline-block rounded-md bg-primary px-7 py-3 text-sm font-medium  leading-snug text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-lg focus:bg-primary-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-lg;
+  }
+
+  .btn-link {
+    @apply bg-transparent text-primary;
+  }
+
+  .navicon-active {
+    @apply rounded-r-lg text-primary md:border-l-4 md:border-primary md:bg-primary md:bg-opacity-10;
+  }
+
+  .form-control-input {
+    @apply flex h-[3rem] w-full rounded-lg border  border-gray-200 p-3 pl-3 text-[1rem] font-normal shadow-sm outline-none transition-shadow duration-200 focus-within:border-none focus-within:outline-none focus-within:ring-2 focus-within:ring-primary focus-within:ring-opacity-50 hover:border-primary  focus:outline-none sm:h-11 sm:text-sm;
+  }
+  .form-control-textarea {
+    @apply flex w-full rounded-lg border  border-gray-200 p-3 pl-3 text-[1rem] font-normal shadow-sm outline-none transition-shadow duration-200 focus-within:border-none focus-within:outline-none focus-within:ring-2 focus-within:ring-primary focus-within:ring-opacity-50 hover:border-primary  focus:outline-none sm:text-sm;
+  }
+
+  .form-control-prepend {
+    @apply pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3;
+  }
+
+  .form-control-select {
+    @apply flex min-h-[3rem] w-full rounded-lg border border-gray-200 text-[1rem] font-normal shadow-sm transition-shadow duration-200 focus-within:border-primary focus-within:outline-none focus-within:ring-2 focus-within:ring-primary focus-within:ring-opacity-50 hover:border-primary  focus:outline-none sm:min-h-[2.75rem] sm:text-sm !important;
+  }
+
+  .form-error {
+    @apply absolute -bottom-4 font-medium text-red-600  transition duration-700;
+  }
+
+  ul.upload-info-list {
+    list-style-image: url("data:image/svg+xml,%3Csvg width='0.625rem' height='0.625rem' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='5' fill='%232AC769'/%3E%3C/svg%3E%0A");
+  }
+
+  .capitalize-first::first-letter {
+    @apply capitalize;
+  }
+
+  .select-group {
+    @apply relative mb-6 flex-1 p-1;
+  }
+
+  .input-group {
+    @apply relative mb-6 flex-1 p-1;
+  }
+  .pagination-item-default {
+    @apply pagination-item border-white bg-white text-gray-700 hover:bg-primary hover:bg-opacity-5;
+  }
+
+  .pagination-item-active {
+    @apply pagination-item z-10 border-primary bg-primary text-white;
+  }
+
+  .pagination-item-disabled {
+    @apply pagination-item border-gray-300 bg-gray-400 text-white;
+  }
+
+  .page-container {
+    @apply h-full px-20 pt-24 pb-20;
+  }
+
+  /* Works on Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: grey grey;
+  }
+
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 0.2rem;
+    height: 0.2rem;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #a5a5a5;
+    border-radius: 1rem;
+    border: 0.2rem solid #a5a5a5;
+  }
+}
+.autoselect__input:focus {
+  box-shadow: none !important;
+}
+
+.pageSelect__option {
+  padding: 0.5rem 1rem !important;
+}
